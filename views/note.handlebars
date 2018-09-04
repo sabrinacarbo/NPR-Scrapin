@@ -1,0 +1,36 @@
+<nav class="navbar navbar-lg navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">NPR Scrapin</a>
+        <a class="navbar-brand" href="/scrape">Scrape NPR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<div class="container">
+    <div class="jumbotron">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-heading">
+                    <h3 class="card-title" align="center">{{title}}</h3>
+                </div>
+                <div class="card-body">
+                    <img src={{img}} class="card-img-top" alt="Image" />
+                    <br>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{summary}}</p>
+                    <a href={{link}} class="card-link" target="_blank">Link to Article</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label fontSize="18px" for="note">Note:</label>
+                    <textarea class="form-control" rows="5" id="note">{{note.body}}</textarea>
+                    <button data-id={{_id}} class="btn btn-default" type="save" name="save" id="noteSave" value="Save Note">Save Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
